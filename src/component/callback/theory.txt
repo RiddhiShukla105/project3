@@ -1,0 +1,22 @@
+useCallback: is a react hook that returns a memorized version of a callback function
+
+1.) It ensures that the function does not get re-created on every render unless its dependencies change
+2.) This is very useful when 
+a.)passing a function as a prop to a child component(to avoid unnecessary re-renders)
+b.)using function inside useEffect/useMemo dependencies
+c.)optimizing performance in large apps
+
+Syntax :
+
+const memorizedCallback =useCallback(
+    ()=>{
+        ///function logic
+    },
+    [dependencies]
+);
+
+How it works:
+
+1.)When a component is rendered, useCallback checks the dependency aaray
+2.)If the dependencies haven't changed , it returns the cached function 
+3.)if the dependencies have changed, it recreates the function and caches the new version

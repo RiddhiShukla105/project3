@@ -1,0 +1,43 @@
+{
+  "sign": [
+    {
+      "id": 1,
+      "fname": "Riddhi",
+      "lname": "Shukla",
+      "email": "riddhi@gmail.com",
+      "pass": "Riddhi.12"
+    },
+    {
+      "fname": "blue",
+      "lname": "ranger",
+      "email": "sam@gmail.com",
+      "pass": "6uyg",
+      "cpass": "6uyg",
+      "id": 2
+    },
+    {
+      "fname": "blue",
+      "lname": "ranger",
+      "email": "sam@gmail.com",
+      "pass": "6uyg",
+      "cpass": "6uyg",
+      "id": 3
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "email": "",
+      "pass": "",
+      "cpass": "",
+      "id": 4
+    },
+    {
+      "fname": "shyam",
+      "lname": "Sam",
+      "email": "shyam@gmail.com",
+      "pass": "sh.123",
+      "cpass": "sh.123",
+      "id": 5
+    }
+  ]
+}

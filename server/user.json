@@ -1,0 +1,25 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "riddhi",
+      "mob": 8009037924,
+      "email": "riddhi@gamil.com",
+      "address": "krishna nagar"
+    },
+    {
+      "name": "blue jkjkl ranger",
+      "mob": "989785656",
+      "email": "dino@gmail.com",
+      "address": "vhjjkhkjlk",
+      "id": 2
+    },
+    {
+      "name": "ram",
+      "mob": "8976657890",
+      "email": "ram@gmail.com",
+      "address": "pitampura",
+      "id": 3
+    }
+  ]
+}
