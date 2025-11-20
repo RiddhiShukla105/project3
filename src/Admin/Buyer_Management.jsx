@@ -1,151 +1,3 @@
-// import React, { useState, useEffect } from 'react';
-// import { DataTable } from 'primereact/datatable';
-// import { Column } from 'primereact/column';
-// import axios from 'axios';
-// import Sidenav from './Sidenav';
-// import Nav from './Nav';
-// import {toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
-
-// const Buyer_Management = () => {
-//     const[user,setUser]=useState([])
-//     useEffect(()=>{
-//         axios.get("http://localhost:4004/sign")
-//         .then((res)=>{
-//             setUser(res.data);
-//         })
-//         .catch((error)=>
-//             console.log(error.message))
-//     },[])
-//     const deleteUser=async(id)=>{
-//        try{
-//             await axios.delete(`http://localhost:4004/sign/${id}`)
-//             setUser(user.filter((details)=>details._id!==id));
-//             toast.success("Buyer Deleted Successfully", {
-//                        position: "top-right",
-//                        autoClose: 2000,
-//                      })
-//        }catch(error){
-//             console.log(error);
-//             toast.error("Error Deleting User", {
-//                        position: "top-right",
-//                        autoClose: 2000,
-//                      })
-//        }
-//     }
-//     const blockUser=async(id)=>{
-//         try{
-//             await axios.put(`http://localhost:4004/sign/block/${id}`);
-//             setUser(prev=> prev.map((details)=>
-//             details._id===id?{...details,isBlocked:true}:details
-//             ));
-//             toast.info("User is blocked", {
-//                        position: "top-right",
-//                        autoClose: 2000,
-//                      })
-//         }catch(error){
-//             console.log(error);
-//             toast.error("User cannot be blocked", {
-//                        position: "top-right",
-//                        autoClose: 2000,
-//                      })
-//         }
-//     }
-//     const unblockUser=async(id)=>{
-//         try{
-//             await axios.put(`http://localhost:4004/sign/unblock/${id}`);
-//             setUser(prev=>prev.map((details)=>details._id===id?{...details,isBlocked:false}:details));
-//             toast.success("User is unblocked", {
-//                        position: "top-right",
-//                        autoClose: 2000,
-//                      })
-//         }catch(error){
-//             console.log(error);
-//             toast.error("User cannot be unblocked", {
-//                        position: "top-right",
-//                        autoClose: 2000,
-//                      })
-//         }
-//     }
-//   return (
-//     <div>
-//       <Nav/>
-//       <div className='flex'>
-//         <Sidenav/>
-//         <div className='p-6 w-full overflow-hidden'>
-//               <DataTable
-//                 value={user}
-//                 paginator
-//                 rows={5}
-//                 stripedRows
-//                 showGridlines
-//                 className="w-full bg-white shadow-xl rounded-2xl border border-gray-200"
-//                 tableClassName="rounded-2xl"
-//                 header=""
-//                 headerClassName="text-2xl font-semibold p-4 bg-blue-50 rounded-t-2xl"
-//                 pt={{
-//                     paginator: { root: { className: "p-4" } },
-//                     table: { className: "rounded-2xl overflow-hidden" }
-//                 }}
-//             >
-//                 <Column
-//                     field="name"
-//                     header="Name"
-//                     headerClassName="bg-gray-100 text-gray-700 font-semibold text-lg"
-//                     bodyClassName="text-lg"
-//                 />
-            
-//                 <Column
-//                     field="email"
-//                     header="Email"
-//                     headerClassName="bg-gray-100 text-gray-700 font-semibold text-lg"
-//                 />
-            
-//                 <Column
-//                     header="Action"
-//                     headerClassName="bg-gray-100 text-gray-700 font-semibold text-lg text-center"
-//                     bodyClassName="text-center"
-//                     style={{ width: "200px" }}
-//                     body={(user) => (
-//                         <div className="flex gap-4 items-center justify-center">
-            
-//                             {user.isBlocked ? (
-//                                 <i
-//                                     className="pi pi-lock text-2xl cursor-pointer transition-transform hover:scale-110"
-//                                     style={{ color: "red" }}
-//                                    onClick={()=>unblockUser(user._id)}
-//                                 ></i>
-//                             ) : (
-                                
-//                                 <i
-//                                     className="pi pi-lock-open text-2xl cursor-pointer transition-transform hover:scale-110"
-//                                     style={{ color: "green" }}
-//                                     onClick={()=>blockUser(user._id)}
-//                                 ></i>
-//                             )}
-            
-//                             {/* <i
-//                                 className="pi pi-pencil text-2xl text-blue-600 cursor-pointer transition-transform hover:scale-110"
-                              
-//                             ></i> */}
-            
-//                             <i
-//                                 className="pi pi-trash text-2xl text-red-600 cursor-pointer transition-transform hover:scale-110"
-//                                onClick={()=>deleteUser(user._id)} ></i>
-            
-//                         </div>
-//                     )}
-//                 />
-//             </DataTable>
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Buyer_Management
-
-
 import React, { useState, useEffect } from "react";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
@@ -164,14 +16,14 @@ const Buyer_Management = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/sign`)
+      .get(`${import.meta.env.VITE_API_URL}/sign`)
       .then((res) => setUser(res.data))
       .catch((err) => console.log(err));
   }, []);
 
   const deleteUser = async (id) => {
     try {
-      await axios.delete(`${process.env.REACT_APP_API_URL}/sign/${id}`);
+      await axios.delete(`${import.meta.env.VITE_API_URL}/sign/${id}`);
       setUser((prev) => prev.filter((u) => u._id !== id));
       toast.success("Buyer deleted successfully");
     } catch (err) {
@@ -181,7 +33,7 @@ const Buyer_Management = () => {
 
   const blockUser = async (id) => {
     try {
-      await axios.put(`${process.env.REACT_APP_API_URL}/sign/block/${id}`);
+      await axios.put(`${import.meta.env.VITE_API_URL}/sign/block/${id}`);
       setUser((prev) =>
         prev.map((u) => (u._id === id ? { ...u, isBlocked: true } : u))
       );
@@ -193,7 +45,7 @@ const Buyer_Management = () => {
 
   const unblockUser = async (id) => {
     try {
-      await axios.put(`${process.env.REACT_APP_API_URL}/sign/unblock/${id}`);
+      await axios.put(`${import.meta.env.VITE_API_URL}/sign/unblock/${id}`);
       setUser((prev) =>
         prev.map((u) => (u._id === id ? { ...u, isBlocked: false } : u))
       );
