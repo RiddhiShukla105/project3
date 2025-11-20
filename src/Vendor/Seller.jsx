@@ -74,41 +74,6 @@ const Seller = () => {
   setForm({ ...form, image: e.target.files[0] });
 };
 
-//     const handleSubmit = async () => {
-
-//   if (!form.category) {
-//     alert("Please select a category");
-//     return;
-//   }
-
-//   const formData = new FormData();
-//   formData.append("productName", form.productName);
-//   formData.append("desc", form.desc);
-//   formData.append("qty", form.qty);
-//   formData.append("price", form.price);
-//   formData.append("image", form.image);
-
-//   let apiURL = "";
-
-//   if (form.category === "shoes") {
-//     apiURL = "http://localhost:4004/shoes";
-//   } else if (form.category === "clothes") {
-//     apiURL = "http://localhost:4004/clothes";
-//   }
-
-//   try {
-//     await axios.post(apiURL, formData, {
-//       headers: { "Content-Type": "multipart/form-data" }
-//     });
-//     alert("Product added successfully 🎉");
-//   } catch (error) {
-//     console.log(error);
-//     alert("Error adding product");
-//   }
-// };
-
-
-
     useEffect(() => {
         const documentStyle = getComputedStyle(document.documentElement);
         const textColor = documentStyle.getPropertyValue('--text-color');
@@ -243,15 +208,14 @@ const Seller = () => {
           autoClose: 2000,
         });
     console.log(res.data);
-    e.currentTarget.reset();
-    // setForm({
-    //   productName: "",
-    //   desc: "",
-    //   qty: "",
-    //   price: "",
-    //   category: "",
-    //   image: null
-    // });
+    setForm({
+      productName: "",
+      desc: "",
+      qty: "",
+      price: "",
+      category: "",
+      image: null
+    });
   } catch (error) {
     console.log(error);
     toast.error("Error adding product");

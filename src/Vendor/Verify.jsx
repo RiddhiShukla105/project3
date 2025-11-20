@@ -15,16 +15,26 @@ const Verify = () => {
 
 const navigate=useNavigate()
 const handler=(e)=>{
-      setForm({...form,[e.target.name]:e.target.value})
-      console.log(form);
+      // setForm({...form,[e.target.name]:e.target.value})
+      // console.log(form);
+      setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 }
 
 const onSave=(e)=>{
   e.preventDefault();
+  console.log("Form sending to backend:", form);
   axios.post("http://localhost:4004/seller/login",form)
   .then((res)=>{
-    setForm(res.data);
-    navigate("/seller")
+    // setForm(res.data);
+    // navigate("/seller")
+      localStorage.setItem("username", res.data.user.name); 
+
+    localStorage.setItem("token", res.data.token);
+localStorage.setItem("role", "seller");
+
+window.dispatchEvent(new Event("login"));
+
+navigate("/seller");
   }).catch((error)=>{
     console.log(error.message)
      toast.error(error.response?.data?.message || "Login failed", {
@@ -69,6 +79,7 @@ return (
           type="email"
           placeholder="Enter your Email"
           name="email"
+          value={form.email}
           onChange={handler}
           className="
             w-full p-3 mt-2 rounded-xl 
@@ -90,6 +101,7 @@ return (
         <input
           type="password"
           name="password"
+          value={form.password}
           onChange={handler}
           placeholder="Enter your Password"
           className="

@@ -1,10 +1,11 @@
 import React,{useState,useEffect} from 'react'
 import Button from '../component/product/Button'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import {toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Nav from '../Admin/Nav';
+import Navbar from './Navbar';
 
 const Register = () => {
     const [data,setData]=useState({
@@ -25,9 +26,13 @@ const Register = () => {
         axios.post("http://localhost:4004/seller",data)
         .then((res)=>{
             console.log(res.data);
-            alert(res.data.message);
-            setData(res.data)
-            navigate("/seller")
+            // alert(res.data.message);
+            toast.success(res.data.message, {
+                   position: "top-right",
+                   autoClose: 2000,
+                 })
+            // setData(res.data)
+            navigate("/verify")
         })
         .catch((error)=>{
             console.log(error)
@@ -36,12 +41,11 @@ const Register = () => {
                    autoClose: 2000,
                  })}
         )
-        e.target.reset();
+        // e.target.reset();
         
     }
  return (
   <>
-  {/* <Nav/> */}
   <div className="relative w-full min-h-screen flex justify-center items-center bg-[url('/img/contact_img.png')] bg-cover bg-center">
     
     <div className="absolute inset-0 bg-black/40"></div>
@@ -134,6 +138,7 @@ const Register = () => {
           Submit
         </button>
       </div>
+      <div className='text-center mt-2 text-white'>Back to Buyer Dashbaord?<Link to="/">Dashboard</Link></div>
     </form>
   </div>
   </>

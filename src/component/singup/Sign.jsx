@@ -42,6 +42,23 @@ function Sign() {
     return;
   }
 
+  if(state.fname.length<2){
+    Swal.fire({ icon: "warning", title: "Please enter vaild name" });
+    return;
+  }
+
+   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(state.email)) {
+    Swal.fire({ icon: "error", title: "Invalid Email Format" });
+    return;
+  }
+
+  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+  if (!passwordRegex.test(state.password)) {
+    Swal.fire({ icon: "error", title: "Password must be at least 8 characters long and include an uppercase letter, a lowercase letter, a digit, and a special character." });
+    return;
+  }
+
      if (state.password !== state.cpass) {
     Swal.fire({ icon: "error", title: "Passwords do not match" });
     return;
@@ -125,7 +142,7 @@ function Sign() {
                   <input
                     type="checkbox"
                     name=""
-                    id=""
+                    id="terms"
                     style={{  marginRight: "10px" }}
                   />
                 </span>

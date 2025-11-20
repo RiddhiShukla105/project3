@@ -1,0 +1,346 @@
+[{
+  "_id": {
+    "$oid": "69186b43d8ef80aa438b4c5f"
+  },
+  "name": "ujuijijk",
+  "email": "red@gmail.com",
+  "mob_num": "2030405060",
+  "password": "12345",
+  "gst": "9080",
+  "b_name": "merchand",
+  "__v": 0,
+  "isBlocked": true
+},{
+  "_id": {
+    "$oid": "69186eee4616d66fd2cb0e29"
+  },
+  "name": "green",
+  "email": "green@gmail.com",
+  "mob_num": "2030405060",
+  "password": "$2b$10$v9whkK3aAryAwmw5FZLjG./qiaCy.KsBi84tyWCr/b86hcXLwVQBa",
+  "gst": "9080",
+  "b_name": "merchand",
+  "__v": 0,
+  "isBlocked": true
+},{
+  "_id": {
+    "$oid": "69195e925b3bb14fff545265"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1,
+  "isBlocked": false
+},{
+  "_id": {
+    "$oid": "69195e925b3bb14fff545266"
+  },
+  "name": "vaani",
+  "email": "vaani@gmail.com",
+  "mob_num": "890453672",
+  "password": "12345",
+  "gst": "9886",
+  "b_name": "adb",
+  "id": 1,
+  "isBlocked": false
+},{
+  "_id": {
+    "$oid": "69195e925b3bb14fff545267"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1,
+  "isBlocked": false
+},{
+  "_id": {
+    "$oid": "69195e925b3bb14fff545268"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "69195e925b3bb14fff545269"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "69195e925b3bb14fff54526a"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "69195e925b3bb14fff54526b"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "69195e925b3bb14fff54526c"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "69195f5b5b3bb14fff54526d"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1,
+  "isBlocked": true
+},{
+  "_id": {
+    "$oid": "69195f5b5b3bb14fff54526f"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "69195f5b5b3bb14fff545270"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "69195f5b5b3bb14fff545271"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "69195f5b5b3bb14fff545272"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "69195f5b5b3bb14fff545273"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "69195f5b5b3bb14fff545274"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "691962c45b3bb14fff545275"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "691962c45b3bb14fff545276"
+  },
+  "name": "Riddhi Shukla",
+  "email": "wiy@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1,
+  "isBlocked": false
+},{
+  "_id": {
+    "$oid": "691962c45b3bb14fff545277"
+  },
+  "name": "Riddhi Shukla",
+  "email": "lw@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "691962c45b3bb14fff545278"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "691962c45b3bb14fff545279"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "691962c45b3bb14fff54527a"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "691962c45b3bb14fff54527b"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "691962c45b3bb14fff54527c"
+  },
+  "name": "Riddhi Shukla",
+  "email": "w@gmail.com",
+  "mob_num": "6768",
+  "password": "12345",
+  "gst": "5678",
+  "b_name": "gvnb",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "691aefd074af43cedb5699ab"
+  },
+  "name": "ii",
+  "email": "ii@gmail.com",
+  "mob_num": "9080075040",
+  "password": "$2b$10$57i66yteFIoJRxXDd2fvY.G5ENJ47.D2jmLuWuHB3R.v37SeUCblq",
+  "gst": "GST7890",
+  "b_name": "ii",
+  "isBlocked": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "691af21880dfa4270896a96b"
+  },
+  "name": "tangerine",
+  "email": "tang@gmail.com",
+  "mob_num": "6768",
+  "password": "$2b$10$qGSN.eICJwq3zc2EFvaWGuLv0icwYqp1yLITOdbKg6wjWD3y/nT5a",
+  "gst": "gst123456",
+  "b_name": "gstuio",
+  "isBlocked": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "691daf061a9c7c6ff9b90a91"
+  },
+  "name": "Vineeta",
+  "email": "vini@gmail.com",
+  "mob_num": "9080075040",
+  "password": "$2b$10$HT9B1TNv/tJe9dUrwi3Ra./146tWTWyj51n0Taya/49guDkk755NS",
+  "gst": "5678",
+  "b_name": "assdd",
+  "isBlocked": false,
+  "role": "seller",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "691dfaf27c41c62e266d2bd9"
+  },
+  "name": "abc",
+  "email": "abc@gmail.com",
+  "mob_num": "9080075040",
+  "password": "$2b$10$oV0y.UB8mUt5A1WqEMsV6edwwdEbz5.eu.5pS2qwBseNhn30bMq9a",
+  "gst": "9876",
+  "b_name": "abc",
+  "isBlocked": false,
+  "role": "seller",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "691e07747c41c62e266d2bf0"
+  },
+  "name": "mno",
+  "email": "mno@gmail.com",
+  "mob_num": "6768",
+  "password": "$2b$10$BSLGKHpNwBoYRprPsWRjo.ayHwAr3kDItiq8qFC4R0cQ3oB9/OHoW",
+  "gst": "GST7890",
+  "b_name": "mno",
+  "isBlocked": false,
+  "role": "seller",
+  "__v": 0
+}]

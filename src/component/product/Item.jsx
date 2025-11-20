@@ -31,12 +31,7 @@ const Item = () => {
       return;
     }
 
-    //include size
-    // const itemToAdd={
-    //   ...data,
-    //   size:data.source==='product'||'cloth',selectedSize:undefined
-    // }
-
+    
     const itemToAdd = {
   ...data,
   selectedSize,

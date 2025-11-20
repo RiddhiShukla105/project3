@@ -1,0 +1,139 @@
+[{
+  "_id": {
+    "$oid": "68fe7b2506675fa5011aabdc"
+  },
+  "name": "joe",
+  "email": "riddhi@gmail.com",
+  "password": "$2b$10$/VWeZpXMeP.WLNpz7wN5.uMYc03iXkNrqLe1xv4BWhl/.QvbRMx.y",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "68fe8be981444f5a75cad5fd"
+  },
+  "name": "joe",
+  "email": "sam@gmail.com",
+  "password": "$2b$10$C0XRFRqQkhkyjslIda316e/YG2NEt3zAQaarQYMv0cfWghzvIQBGa",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "68fe8c3881444f5a75cad600"
+  },
+  "name": "joeyu",
+  "email": "samuu@gmail.com",
+  "password": "$2b$10$uz9YnRVmQOAREhzbnYBfXOJFIWHD4MD7mZLXw.02lw2UUrZPu9zv6",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "68fe8d46bd60760c74d9be26"
+  },
+  "name": "sam",
+  "email": "samu@gmail.com",
+  "password": "$2b$10$/NuFTzCqyz8bmVGd/qtSBuVnyok219T7fu7CdQ9QTwk3l6tynzY7i",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6905cfd13b3e5dcded3cdc1f"
+  },
+  "name": "red",
+  "email": "red@gmail.com",
+  "password": "12345",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6905d563dc9b3327fcfb085d"
+  },
+  "name": "blue ranger",
+  "email": "blue@gmail.com",
+  "password": "6uyg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "690dc10e9f9d7fde46c2f28e"
+  },
+  "name": "mnae doe",
+  "email": "red23@gmail.com",
+  "password": "12345",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "690dcb289f9d7fde46c2f294"
+  },
+  "name": "bsc erf",
+  "email": "bsc@gmail.com",
+  "password": "1234",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "690dcbe99f9d7fde46c2f296"
+  },
+  "name": "red doe",
+  "email": "red.doe@gmail.com",
+  "password": "12345",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "690dcdb09f9d7fde46c2f298"
+  },
+  "name": "radha mishra",
+  "email": "radha@gmail.com",
+  "password": "12345",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "690dce8226cd92b79e525155"
+  },
+  "name": "radhika rai",
+  "email": "radhika@gmail.com",
+  "password": "$2b$10$d9RNo/mCp9k3CcjxDfNKzOs2Z3QJR4ET6on3t/1gfUtua689DPGcK",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "690dcebf641fbea1f7c0b13e"
+  },
+  "name": "a v",
+  "email": "av@gmail.com",
+  "password": "$2b$10$TX6FbWLy8uLtD79UwgM.SO7cRpIWLa6B7a3XU1YBVVMYb6XG9AMTm",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "690ddeaf641fbea1f7c0b145"
+  },
+  "name": "q r",
+  "email": "q@gmail.com",
+  "password": "$2b$10$GBVVan.q/yDl3DwOpipahevA0Ph/cn/hiW4bwUWfaVs0r7kzXxr6e",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "690ddef7641fbea1f7c0b149"
+  },
+  "name": "w r",
+  "email": "w@gmail.com",
+  "password": "$2b$10$VTeDHWAM84o8XDdvJKT.GuHyErbaxtJ7dVqnor5BTKMby/SkGxKiS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "691248b03222b7c3f230b58a"
+  },
+  "name": "q a",
+  "email": "password_12345@gmail.com",
+  "password": "$2b$10$jkSH/BVw.oSlJ77tlHzkiOek37oV14.nudNuUkfW1IZXdyrcPTRZO",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "691dfd737c41c62e266d2be3"
+  },
+  "name": "Admin Admin",
+  "email": "admin@ekart.com",
+  "password": "$2b$10$wQ3.oYRICgGpsbWJBqu1A.NfExorseKNWgf4fN7pmmwWOqqBwkepW",
+  "role": "admin",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "691e18887c41c62e266d2c4c"
+  },
+  "name": "ant aa",
+  "email": "a@gmail.com",
+  "password": "$2b$10$kOYfvTK/iI7.RpIxayY.9eRiXbREhQHVTujCT/tX.nQyvx2jd/WoG",
+  "role": "buyer",
+  "__v": 0
+}]

@@ -16,10 +16,10 @@ import Page_const from "../../Admin/Page_const";
 import Calendar from "../../Admin/Calender";
 
 const appRoute=[
-    {path:"/",Component:Home,name:"Home",role:"buyer"},
-    {path:"/product",Component:Product,name:"Shoe",role:"buyer"},
-    {path:"/cloth",Component:Cloth,name:"Cloth",role:"buyer"},
-    {path:"/services",Component:Service,name:"Service",role:"buyer"},
+    {path:"/",Component:Home,name:"Home"},
+    {path:"/product",Component:Product,name:"Shoe"},
+    {path:"/cloth",Component:Cloth,name:"Cloth"},
+    {path:"/services",Component:Service,name:"Service"},
     {path:"/cart",Component:Cart},
     {path:"/product/:id",Component:Item},
     {path:"/sign",Component:Sign},

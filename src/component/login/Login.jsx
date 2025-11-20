@@ -108,11 +108,15 @@ function Login() {
       .then((res) => {
         if (res.data.token) {
           localStorage.setItem("token", res.data.token);
+          localStorage.setItem("role", res.data.role);
           window.dispatchEvent(new Event("login"));
         }
+Swal.fire("Success", res.data.message, "success").then(() => {
+  if (res.data.role === "admin") navigate("/dashboard", { replace: true });
+  else if (res.data.role === "seller") navigate("/seller", { replace: true });
+  else navigate("/", { replace: true }); // buyer
+});
 
-        Swal.fire("Success", res.data.message, "success");
-        navigate("/product");
       })
       .catch((err) => {
         Swal.fire("Login failed:", err.message, "error");
