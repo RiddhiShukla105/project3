@@ -1,9 +1,3 @@
-//Admin page 
-//Admins control and manage the marketplace items and customer acounts.
-//customer account: show all users account details here (and show their orders)
-//Market place item update , show items 
-//search bar
-//item add or delete
 
 import React, { useState, useEffect } from "react";
 import Sidenav from "./Sidenav";
@@ -180,9 +174,6 @@ const Dashboard = () => {
             </div>
           </div>
 
-          {/* NEW ELEMENTS BELOW */}
-
-          {/* ---------------- RECENT ORDERS TABLE ---------------- */}
           <div className="bg-white p-6 rounded-xl shadow-md border mb-10">
             <h2 className="font-semibold text-gray-800 text-lg mb-4">
               Recent Orders

@@ -164,14 +164,14 @@ const Buyer_Management = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4004/sign")
+      .get(`${process.env.REACT_APP_API_URL}/sign`)
       .then((res) => setUser(res.data))
       .catch((err) => console.log(err));
   }, []);
 
   const deleteUser = async (id) => {
     try {
-      await axios.delete(`http://localhost:4004/sign/${id}`);
+      await axios.delete(`${process.env.REACT_APP_API_URL}/sign/${id}`);
       setUser((prev) => prev.filter((u) => u._id !== id));
       toast.success("Buyer deleted successfully");
     } catch (err) {
@@ -181,7 +181,7 @@ const Buyer_Management = () => {
 
   const blockUser = async (id) => {
     try {
-      await axios.put(`http://localhost:4004/sign/block/${id}`);
+      await axios.put(`${process.env.REACT_APP_API_URL}/sign/block/${id}`);
       setUser((prev) =>
         prev.map((u) => (u._id === id ? { ...u, isBlocked: true } : u))
       );
@@ -193,7 +193,7 @@ const Buyer_Management = () => {
 
   const unblockUser = async (id) => {
     try {
-      await axios.put(`http://localhost:4004/sign/unblock/${id}`);
+      await axios.put(`${process.env.REACT_APP_API_URL}/sign/unblock/${id}`);
       setUser((prev) =>
         prev.map((u) => (u._id === id ? { ...u, isBlocked: false } : u))
       );

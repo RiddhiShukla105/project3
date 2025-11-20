@@ -185,13 +185,13 @@ const Seller = () => {
   let url = "";
 
   if (form.category === "shoes") {
-    url = "http://localhost:4004/product";
+    url = `${import.meta.env.VITE_API_URL}/product`;
     formData.append("qty", form.qty);
     formData.append("desc", form.desc);
   }
 
   if (form.category === "clothes") {
-    url = "http://localhost:4004/cloth";
+    url = `${import.meta.env.VITE_API_URL}/cloth`;
   }
 
   try {

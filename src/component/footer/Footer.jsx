@@ -6,16 +6,6 @@ const Footer = () => {
   return (
     <>
       <div className="footer">
-        {/* <div className="container f1">
-            <div className="row">
-                <div className="col-md-8">Stay Upto Date About</div>
-                <div className="col-md-4"><input type="search" name="" id="" placeholder='Enter your Email address....' /></div>
-            </div>
-             <div className="row">
-                <div className="col-md-8">Our Latest Offers</div>
-                <div className="col-md-4"><input type="search" name="" id="" placeholder='Subscribe to news letter' /></div>
-            </div>
-        </div> */}
         <div className="container-fluid f2">
         <div className="row">
             <div className="col-md-4 format f3">

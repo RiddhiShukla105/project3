@@ -1,96 +1,3 @@
-// import React, { useEffect, useState } from 'react'
-// import { Zoom } from 'react-slideshow-image';
-// import 'react-slideshow-image/dist/styles.css'
-// import './Cloth.css'
-// import Header from '../header/Header';
-// import Button from './Button';
-// import Footer from '../footer/Footer';
-// import { useNavigate } from 'react-router-dom';
-// import axios from 'axios'
-
-
-// const item=[
-//     {
-//         image:"/img/c7.jpg"
-//     },
-//      {
-//         image:"/img/c8.jpg"
-//     },
-//      {
-//         image:"/img/c9.jpg"
-//     },
-//      {
-//         image:"/img/c10.jpg"
-//     },
-// ]
-
-
-
-// const zoomOutProperties = {
-//   duration: 2000,
-//   transitionDuration: 500,
-//   infinite: true,
-//   indicators: true,
-//   scale: 0.4,
-//   arrows: true
-// };
-
-// const Cloth = () => {
-//     const [cloth,setCloth]=useState([])
-//     const navigate=useNavigate()
-//     const handleClick = (e) => {
-//   navigate(`/product/${e.id}`, { state: { ...e, source: "cloth" } });
-// };
-
-
-//    useEffect(()=>{
-//     axios.get("http://localhost:4004/cloth")
-//     .then((res)=>{
-//         setCloth(res.data);
-//     }).catch((err)=>{
-//         console.log(err);
-        
-//     })
-//    },[])
-//   return (
-//     <>
-//         <Header active="Cloth"/>
-//         <div className='hi'>
-//       <div className="slide-container" >
-//               <Zoom {...zoomOutProperties}>
-//                 {
-//                   item.map((each, index) => <img key={index}  src={each.image} />)
-//                 }
-//               </Zoom>
-//             </div>
-//                 <h2 className="collection">Our Latest Collection</h2>
-//         <div className="product_card">
-//                         {cloth.map((data,id)=>(
-//                             <div className="card" style={{width:"18rem"}} key={id}>
-//                             <img src={data.image}  style={{width:"100%"}} className="card-img-top" alt="..."/>
-//                             <div className="card-body">
-//                                 <h5 className="card-title" style={{fontWeight:"bolder"}}>{data.productName}</h5>
-//                                 <p className="card-text" style={{fontWeight:"bold",fontSize:"24px"}}>Rs. {data.price}</p>
-//                                 {/* <button to="/" onClick={()=>handleClick(item)} className="btn btn-primary">Buy</button> */}
-//                                 <div style={{display:"flex" , justifyContent:"space-between"}}>
-//                                  <Button name="Buy" />
-//                                  <Button name="View More" onClick={() => handleClick(data)}/>
-//                                 </div>
-//                             </div>
-//                             </div>
-//                         ))}
-                            
-//                         </div>
-//     </div>
-
-//     <Footer/>
-//     </>
-//   )
-// }
-
-// export default Cloth
-
-
 import React, { useEffect, useState,useRef } from 'react'
 import { Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
@@ -142,12 +49,12 @@ const Cloth = () => {
 const handleClick = (product) => {
   const imageUrl = product.image?.startsWith("/") || product.image?.startsWith("http")
     ? product.image // old products
-    : `http://localhost:4004/uploads/${product.image}`; // new uploaded products
+    : `${import.meta.env.VITE_API_URL}/uploads/${product.image}`; // new uploaded products
 
   navigate(`/product/${product.id}`, { 
     state: { 
       ...product, 
-      image: imageUrl,   // 👈 send proper URL
+      image: imageUrl,   
       source: "cloth" 
     } 
   });
@@ -163,7 +70,7 @@ const handleClick = (product) => {
 
 
    useEffect(()=>{
-    axios.get("http://localhost:4004/cloth")
+    axios.get(`${import.meta.env.VITE_API_URL}/cloth`)
     .then((res)=>{
         setCloth(res.data);
         setFilteredProducts(res.data);
@@ -229,7 +136,7 @@ const handleClick = (product) => {
       /> */}
 
 <img
-  src={`http://localhost:4004/uploads/${product.image}`}
+  src={`${import.meta.env.VITE_API_URL}/uploads/${product.image}`}
   alt={product.productName}
   className="product-image"
 />

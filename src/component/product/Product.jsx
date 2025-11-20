@@ -248,7 +248,7 @@ const [products, setProducts] = useState([]);
 
     useEffect(() => {
     // axios.get("http://localhost:3006/product")
-    axios.get("http://localhost:4004/product")
+    axios.get(`${import.meta.env.VITE_API_URL}/product`)
       .then((res)=>{
         console.log("API Response:",res.data);   // <-- Check here
         setItem(res.data);                       // <-- use res.data, not res
@@ -318,7 +318,7 @@ const [products, setProducts] = useState([]);
       className="product-image"
     /> */}
     <img
-  src={`http://localhost:4004/uploads/${product.image}`}
+  src={`${import.meta.env.VITE_API_URL}/uploads/${product.image}`}
   alt={product.productName}
   className="product-image"
 />

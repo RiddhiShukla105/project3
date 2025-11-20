@@ -23,7 +23,7 @@ const Register = () => {
 
     const onSave=(e)=>{
         e.preventDefault();
-        axios.post("http://localhost:4004/seller",data)
+        axios.post(`${import.meta.env.VITE_API_URL}/seller`,data)
         .then((res)=>{
             console.log(res.data);
             // alert(res.data.message);

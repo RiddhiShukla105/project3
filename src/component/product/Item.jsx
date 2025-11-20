@@ -63,7 +63,7 @@ const Item = () => {
   src={
     data.image?.startsWith("/") || data.image?.startsWith("http")
       ? data.image
-      : `http://localhost:4004/uploads/${data.image}`
+      : `${import.meta.env.VITE_API_URL}/uploads/${data.image}`
   }
   alt={data.productName}
   className="hover-zoom"

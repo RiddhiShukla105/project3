@@ -1,84 +1,3 @@
-// import React, { useState } from 'react'
-// import Swal from 'sweetalert2';
-// import axios from 'axios'
-// import './Login.css'
-// import Header from '../header/Header';
-// import Button from '../product/Button';
-// import { useNavigate,Link } from 'react-router-dom';
-
-
-
-
-// function Login() {
-//     const[state,setState]=useState({
-//             email:"",
-//             password:"",
-//         });
-
-//             const navigate=useNavigate();
-
-//         const handler= (event)=>{
-//         const{name,value}=event.target;
-//         // console.log(name+" "+value);
-        
-//         setState({...state,[name]:value});
-//     };
-
-//     const loginData= (event)=>{
-//         event.preventDefault();
-//          console.log(state); 
-
-//         axios.post('http://localhost:4004/login',state)
-//         .then((res)=>{
-//             console.log(res.data); 
-//               // ✅ Save token here
-//                 if (res.data.token) {
-//                 localStorage.setItem("token", res.data.token);
-//                // 🔥 Tell CartContext (and other listeners) that user logged in
-//                window.dispatchEvent(new Event("login"));
-
-//                 }
-//            Swal.fire('Success', res.data.message, 'success');
-           
-//            navigate('/product')
-
-//         }).catch((err)=>{
-//            Swal.fire("Login failed due to : ",err.message,'Try again!!')
-//         })
-
-//         event.target.reset();
-//     };
-//   return (
-//     <> 
-//     <Header/>
-//     <div className="login_container">
-//     <div className="login_left">
-//     <h1>Login Please</h1>
-// <form action="" onSubmit={loginData}>
-//     <div className="lable">
-//     <h3>Email</h3>
-//     <input type="text" name="email" onChange={handler} id="" />  
-//     </div>
-//     <div className="lable">
-//     <h3>Password </h3> 
-//     <input type="text" name="password" onChange={handler} id="" />   
-//     </div>
-//     <Button name="Submit"/> 
-// </form> 
-// </div>
-// <div className="login_right">
-//     <img src="img\fun-3d-cartoon-teenage-boy-shopping.jpg" alt="" />
-// </div>
-// Create New Account? <Link to="/sign">Sign-up</Link>
-// Are you a seller? <Link to="/verify">Sign-in</Link>
-// </div>
-//     </>
-//   )
-// }
-
-// export default Login
-
-
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import axios from "axios";
@@ -104,7 +23,7 @@ function Login() {
     event.preventDefault();
 
     axios
-      .post("http://localhost:4004/login", state)
+      .post(`${process.env.REACT_APP_API_URL}/login`, state)
       .then((res) => {
         if (res.data.token) {
           localStorage.setItem("token", res.data.token);

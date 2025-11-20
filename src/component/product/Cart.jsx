@@ -78,7 +78,7 @@ const Cart = () => {
   src={
     item.image?.startsWith("/") || item.image?.startsWith("http")
       ? item.image
-      : `http://localhost:4004/uploads/${item.image}`
+      : `${import.meta.env.VITE_API_URL}/uploads/${item.image}`
   }
   alt={item.productName}
   className="cart_img"

@@ -70,7 +70,7 @@ function Sign() {
       password: state.password,
     };
     try {
-      const res = await axios.post("http://localhost:4004/sign", userData);
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/sign`, userData);
       console.log("Response:", res.data);
 
       Swal.fire({
@@ -158,20 +158,9 @@ function Sign() {
               Already have an account? <Link to='/login'>Sign-in</Link>
             </h6>
           </form>
-          {/* <div className="other">
-            <div className="btn">
-              <button className="other-btn">Google</button>
-              <button className="other-btn" style={{ color: "#00008b" }}>
-                Twitter
-              </button>
-              <button className="other-btn" style={{ color: "#5050ff" }}>
-                Facebook
-              </button>
-            </div>
-          </div> */}
+          
         </div>
       </div>
-      {/* <Footer/> */}
     </>
   );
 }

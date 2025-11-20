@@ -15,19 +15,7 @@ const Nav = () => {
           <span className="text-4xl font-extrabold">E</span>kart
         </div>
 
-        {/* Center Search Bar */}
-        {/* <div className="flex-1 flex justify-center">
-          <IconField
-            iconPosition="left"
-            className="bg-white rounded-full px-4  w-full max-w-xl"
-          >
-            <InputIcon className="pi pi-search"  />
-            <InputText
-              placeholder="Search for products"
-              className="outline-none border-none w-full"
-            />
-          </IconField>
-        </div> */}
+        
 
         <div className='text-2xl text-white font-bold space-x-2'>A D M I N  P A N E L</div>
         {/* HAMBURGER BUTTON FOR MOBILE */}

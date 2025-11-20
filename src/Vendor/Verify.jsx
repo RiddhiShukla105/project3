@@ -23,7 +23,7 @@ const handler=(e)=>{
 const onSave=(e)=>{
   e.preventDefault();
   console.log("Form sending to backend:", form);
-  axios.post("http://localhost:4004/seller/login",form)
+  axios.post(`${import.meta.env.VITE_API_URL}/seller/login`,form)
   .then((res)=>{
     // setForm(res.data);
     // navigate("/seller")
@@ -68,7 +68,7 @@ return (
 
       <p className="text-center text-gray-200 mb-6 sm:mb-8 text-xs sm:text-sm md:text-base">
         Access your dashboard and manage your store
-      </p>
+      </p>  
 
       {/* Email Input */}
       <div className="mb-4 sm:mb-5">
