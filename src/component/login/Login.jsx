@@ -23,7 +23,7 @@ function Login() {
     event.preventDefault();
 
     axios
-      .post(`${process.env.REACT_APP_API_URL}/login`, state)
+      .post(`${import.meta.env.VITE_API_URL}/login`, state)
       .then((res) => {
         if (res.data.token) {
           localStorage.setItem("token", res.data.token);
