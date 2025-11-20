@@ -19,7 +19,7 @@ const Seller_Management = () => {
     });
 
     useEffect(() => {
-        axios.get(`${process.env.REACT_APP_API_URL}/seller`)
+        axios.get(`${import.meta.env.VITE_API_URL}/seller`)
         .then((res)=>{
             setCustomers(res.data);
         })
@@ -30,7 +30,7 @@ const Seller_Management = () => {
 
     const deleteUser = async (id) => {
         try {
-            await axios.delete(`${process.env.REACT_APP_API_URL}/seller/${id}`);
+            await axios.delete(`${import.meta.env.VITE_API_URL}/seller/${id}`);
             setCustomers(customers.filter((user) => user._id !== id));
             toast.success("User delted", {
                        position: "top-right",
@@ -47,7 +47,7 @@ const Seller_Management = () => {
 
     const blockUser = async (id) => {
         try {
-            await axios.put(`${process.env.REACT_APP_API_URL}/seller/block/${id}`);
+            await axios.put(`${import.meta.env.VITE_API_URL}/seller/block/${id}`);
             setCustomers(prev =>
                 prev.map((user) =>
                     user._id === id ? { ...user, isBlocked: true } : user
@@ -68,7 +68,7 @@ const Seller_Management = () => {
 
     const unblockUser = async (id) => {
         try {
-            await axios.put(`${process.env.REACT_APP_API_URL}/seller/unblock/${id}`);
+            await axios.put(`${import.meta.env.VITE_API_URL}/seller/unblock/${id}`);
             setCustomers(prev =>
                 prev.map((user) =>
                     user._id === id ? { ...user, isBlocked: false } : user
@@ -96,7 +96,7 @@ const Seller_Management = () => {
     // ========================= Save Edited User =============================
     const saveUser = async () => {
         try {
-            await axios.patch(`${process.env.REACT_APP_API_URL}/seller/edit/${selectedUser._id}`, selectedUser);
+            await axios.patch(`${import.meta.env.VITE_API_URL}/seller/edit/${selectedUser._id}`, selectedUser);
 
             setCustomers(prev =>
                 prev.map(user =>
